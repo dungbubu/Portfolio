@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+    <title>DungBu • Product</title>
+    <link rel="shortcut icon" href="./img/logo/favicon.png" type="image/x-icon">
+
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS Product -->
+    <link rel="stylesheet" href="./css/product.css">
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- jQuery library -->
+    <script src="./lib/jQuery-3.5.1/jquery-3.5.1.js"></script>
+    <!-- jQuery Ui library -->
+    <script src="./lib/jQueryUi-1.3.1.1/jquery-ui.js"></script>
+    <!-- ImagesLoaded library -->
+    <script src="./lib/ImagesLoaded-4.1.2/imagesloaded.pkgd.min.js"></script>
+    <!-- Isotope library -->
+    <script src="./lib/Isotope/isotope.pkgd.min.js"></script>
+    <!-- Infinite Scroll libary -->
+    <script src="./lib/Infinite Scroll-v4/infinite-scroll.pkgd.min.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+  </head>
+
+
+  <body>
+    
+    <div w3-include-HTML="./module/body.html"></div>
+
+    <section id="sectionProduct">
+      <div class="title">
+        <h2>product</h2>
+        <div class="button-group filter-button-group">
+          <button class="button is-checked" data-filter="*">All</button>
+          <button class="button" data-filter=".slide">Presentation</button>
+          <button class="button" data-filter=".cv">Curriculum Vitae</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+      </div>
+
+      <div class="page-load-status">
+        <p class="infinite-scroll-last">End of content</p>
+        <p class="infinite-scroll-error">No more project to load, 
+          <a href="#sectionProduct"><i>back to top</i></a>
+        </p>
+      </div>
+    </section>
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <script src="./js/includeHTML.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/listProduct.js"></script>
+    <script src="./js/gridIsotope.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+  </body>
+</html>

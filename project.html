@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+    <title>DungBu • Project</title>
+    <link rel="shortcut icon" href="./img/logo/favicon.png" type="image/x-icon">
+
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS Project -->
+    <link rel="stylesheet" href="./css/project.css">
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- jQuery library -->
+    <script src="./lib/jQuery-3.5.1/jquery-3.5.1.js"></script>
+    <!-- jQuery Ui library -->
+    <script src="./lib/jQueryUi-1.3.1.1/jquery-ui.js"></script>
+    <!-- ImagesLoaded library -->
+    <script src="./lib/ImagesLoaded-4.1.2/imagesloaded.pkgd.min.js"></script>
+    <!-- Isotope library -->
+    <script src="./lib/Isotope/isotope.pkgd.min.js"></script>
+    <!-- Infinite Scroll libary -->
+    <script src="./lib/Infinite Scroll-v4/infinite-scroll.pkgd.min.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+  </head>
+
+
+  <body>
+    
+    <div w3-include-HTML="./module/body.html"></div>
+
+    <section id="sectionProject">
+      <div class="title">
+        <h2>project</h2>
+        <div class="button-group filter-button-group">
+          <button class="button" data-filter="*">All</button>
+          <button class="button" data-filter=".weblandingpage">Web . Landing page</button>
+          <button class="button" data-filter=".powerpoint">Powerpoint</button>
+          <button class="button" data-filter=".motiongraphic">
+            <a href="https://dungbubu.com/youtube" target="_blank">Motion graphic</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+      </div>
+
+      <div class="page-load-status">
+        <p class="infinite-scroll-last">End of content</p>
+        <p class="infinite-scroll-error">No more project to load, 
+          <a href="#sectionProject"><i>back to top</i></a>
+        </p>
+      </div>
+    </section>
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <script src="./js/includeHTML.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/listProject.js"></script>
+    <script src="./js/gridIsotope.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+  </body>
+</html>

@@ -1,3 +1,7 @@
+/* ------------ --GENERAL-- ------------ */
+i:hover {text-decoration: underline;}
+
+
 /* ------------ --PROJECT-- ------------ */
 section {padding-top: 12rem; max-width: 1320px;}
 img {width: 100%; border-radius: 2px;}
@@ -9,20 +13,17 @@ img {width: 100%; border-radius: 2px;}
 
 .grid {width: 100%; padding: 12rem 0;}
 .grid:after {content: ''; display: block; clear: both;} /* Clear fix */
-.grid-item {position: relative; float: left; margin-bottom: 1rem;}
+.grid-item {margin-bottom: 1rem;}
 
 .grid-item, .grid-sizer {width: calc((100% - 10rem) / 6);} /* Độ rộng cột */
 .grid-item-active {width: calc((100% - 10rem) / 3 + 2rem);} /* Độ rộng cột sau khi được click */
 .gutter-sizer {width: 2rem;} /* Khoảng cách ngang giữa các đối tượng */
 
-
 .grid-item .content {padding: 1.2rem;}
 
 
-/* reveal grid after images loaded */
-.grid.are-images-unloaded {opacity: 0;}
-/* hide by default */
-.grid.are-images-unloaded .image-grid__item {opacity: 0;}
+.grid.are-images-unloaded {opacity: 0;} /* reveal grid after images loaded */
+.grid.are-images-unloaded .image-grid__item {opacity: 0;} /* hide by default */
 
 
 .page-load-status {

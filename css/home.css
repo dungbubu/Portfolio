@@ -130,12 +130,12 @@
   padding: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   text-align: justify;
   background-color: var(--clBackground);
   transform: rotateY(180deg);
 }
-.backContent h4 {text-align: right;}
+.backContent h4 {margin-bottom: 1.5rem;}
 
 /* ------------ --SECTION 3-- ------------ */
 .sectionProject {

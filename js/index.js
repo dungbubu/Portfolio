@@ -1,5 +1,5 @@
 // Câu chào trong Console
-console.clear();
+// console.clear();
 console.log("%c😎 Hey, hi there!","font-size: 24px;",);
 console.log("%cWhatcha Doin'?","font-size: 12px;");
 console.log("%cWould you like a cup of coffee ☕?","font-size: 12px;");

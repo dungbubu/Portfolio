@@ -3,7 +3,7 @@
   --changeColorTime: 600ms;
   --changeBgColorTime: 400ms;
   --clContent: #919191;
-  --clLink: #0040F0;
+  --clShadow: #9191911f;
 }
 
 /* ------------ --FONTS-- ------------ */
@@ -24,6 +24,7 @@
   --clWatermark: #FAFAFA;
   --clTitle: #242424;
   --clHideState: #D8D8D8;
+  --clModal: #24242433;
 }
 
 [data-theme='dark'] {
@@ -31,6 +32,7 @@
   --clWatermark: #292929;
   --clTitle: #FFFFFF;
   --clHideState: #4A4A4A;
+  --clModal: #24242499;
 }
 
 /* ------------ --GENERAL-- ------------ */
@@ -38,8 +40,6 @@
 html {scroll-behavior: smooth; font-size: 62.5%;}
 img {display: block;}
 a, a:hover, a:focus, a:visited {color: inherit; text-decoration: none;}
-i {text-decoration: underline;}
-i:hover {color: var(--clLink); font-weight: 600;}
 button {font-size: inherit; background-color: transparent;}
 html,a,a:hover,button {cursor: default;}
 /* h1,h2,h3,h4,span,p {transition: color var(--changeColorTime) ease-in-out;} */

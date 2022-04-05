@@ -1,4 +1,5 @@
 /* ------------ --GENERAL-- ------------ */
+i:hover {text-decoration: underline;}
 .watermark, .error-information {
   font-family: 'Philosopher', sans-serif;
   text-align: center;

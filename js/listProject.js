@@ -1,13 +1,21 @@
 let list_project = [
   // Ghi chú về cách đặt tên Class
-  //     weblandingpage     : Đặt cho Web và Landing Page
-  //     powerpoint         : Đặt cho Powerpoint
-  //     motiongraphic      : Đặt cho Motion Graphic
+  //     webLandingpage     : Đặt cho Web và Landing Page
+  //     presentation       : Đặt cho Slide thuyết trình
+  //     motionGraphic      : Đặt cho Motion Graphic
 
 
   {
+    id:    19,
+    class: "presentation",
+    name:  "Caraot",
+    type:  "PowerPoint",
+    url:   "./img/project/Caraot.webp",
+  },
+
+  {
     id:    18,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Domain Space",
     type:  "Landing Page",
     url:   "./img/project/iNETDomainSpace.webp",
@@ -15,7 +23,7 @@ let list_project = [
 
   {
     id:    17,
-    class: "powerpoint",
+    class: "presentation",
     name:  "FTA E&C",
     type:  "PowerPoint",
     url:   "./img/project/FTA.webp",
@@ -23,7 +31,7 @@ let list_project = [
 
   {
     id:    16,
-    class: "motiongraphic",
+    class: "motionGraphic",
     name:  "Zozo Mobile",
     type:  "App Explainer",
     url:   "./img/project/Zozo_Mobile.webp",
@@ -31,7 +39,7 @@ let list_project = [
 
   {
     id:    15,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Zozo Mobile",
     type:  "Home Page",
     url:   "./img/project/ZozoMobile.webp",
@@ -39,7 +47,7 @@ let list_project = [
 
   {
     id:    14,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Domain Fun",
     type:  "Landing Page",
     url:   "./img/project/iNETDomainFun.webp",
@@ -47,7 +55,7 @@ let list_project = [
 
   {
     id:    13,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Domain Host",
     type:  "Landing Page",
     url:   "./img/project/iNETDomainHost.webp",
@@ -55,7 +63,7 @@ let list_project = [
 
   {
     id:    12,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Domain Tech",
     type:  "Landing Page",
     url:   "./img/project/iNETDomainTech.webp",
@@ -63,7 +71,7 @@ let list_project = [
 
   {
     id:    11,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Domain Store",
     type:  "Landing Page",
     url:   "./img/project/iNETDomainStore.webp",
@@ -71,7 +79,7 @@ let list_project = [
 
   {
     id:    10,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Domain Xyz",
     type:  "Landing Page",
     url:   "./img/project/iNETDomainXyz.webp",
@@ -79,7 +87,7 @@ let list_project = [
 
   {
     id:    9,
-    class: "powerpoint",
+    class: "presentation",
     name:  "FirstAlliances",
     type:  "PowerPoint",
     url:   "./img/project/FirstAlliances.webp",
@@ -87,7 +95,7 @@ let list_project = [
 
   {
     id:    8,
-    class: "motiongraphic",
+    class: "motionGraphic",
     name:  "iNET Affiliate",
     type:  "Video Marketing",
     url:   "./img/project/iNET_Affiliate.webp",
@@ -95,7 +103,7 @@ let list_project = [
 
   {
     id:    7,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Domain Website",
     type:  "Landing Page",
     url:   "./img/project/iNETDomainWebsite.webp",
@@ -103,7 +111,7 @@ let list_project = [
 
   {
     id:    6,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Domain Press",
     type:  "Landing Page",
     url:   "./img/project/iNETDomainPress.webp",
@@ -111,7 +119,7 @@ let list_project = [
 
   {
     id:    5,
-    class: "motiongraphic",
+    class: "motionGraphic",
     name:  "BePage",
     type:  "App Explainer",
     url:   "./img/project/Bepage.webp",
@@ -119,7 +127,7 @@ let list_project = [
 
   {
     id:    4,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Domain Site",
     type:  "Landing Page",
     url:   "./img/project/iNETDomainSite.webp",
@@ -127,7 +135,7 @@ let list_project = [
 
   {
     id:    3,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Domain Online",
     type:  "Landing Page",
     url:   "./img/project/iNETDomainOnline.webp",
@@ -135,7 +143,7 @@ let list_project = [
 
   {
     id:    2,
-    class: "weblandingpage",
+    class: "webLandingpage",
     name:  "Tết 2022",
     type:  "Landing Page",
     url:   "./img/project/TetLandingPage.webp",
@@ -143,7 +151,7 @@ let list_project = [
 
   {
     id:    1,
-    class: "motiongraphic",
+    class: "motionGraphic",
     name:  "MSC Loyalty System",
     type:  "App Explainer",
     url:   "./img/project/KDTech_LoyaltySystem.webp",

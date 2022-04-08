@@ -1,5 +1,4 @@
 /* ------------ --GENERAL-- ------------ */
-i:hover {text-decoration: underline;}
 .watermark, .error-information {
   font-family: 'Philosopher', sans-serif;
   text-align: center;
@@ -31,6 +30,26 @@ i:hover {text-decoration: underline;}
   letter-spacing: -0.05em;
   color: var(--clTitle);
 }
+.error-information i {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--title);
+  position: relative;
+}
+.error-information i::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--clTitle);
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 200ms ease;
+}
+.error-information i:hover::after {transform: scale(1);}
 
 /* ------------ --Circle Text Animation-- ------------ */
 .circle-Text {

@@ -47,6 +47,30 @@ img {width: 100%; border-radius: 2px;}
   background-color: var(--clTitle);
 }
 
+.flickity-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 4px;
+  background: var(--clBackground);
+  color: var(--clTitle);
+}
+.flickity-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.flickity-button-close {display: none;}
+.flickity-button .flickity-button-icon {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+}
+
 .itemContent {margin: 1rem 1rem 1rem 1.5rem;}
 .itemSubTitle {margin: 0.5rem 0; font-size: 1.2rem;}
 .itemFunction i {color: var(--clTitle);}
@@ -66,6 +90,37 @@ img {width: 100%; border-radius: 2px;}
 }
 
 
+.modalPopup.active {display: block;}
+.modalPopup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clPopup);
+  z-index: 100;
+}
+
+.modalPopup .grid-item:hover {margin-top: 0; box-shadow: none;}
+.modalPopup .carousel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+}
+.modalPopup .carousel-cell {margin-right: 2rem;}
+.modalPopup .itemContent {display: none;}
+.modalPopup .flickity-button-open {display: none;}
+.modalPopup .flickity-button-close {
+  top: calc(50% - 22rem);
+  left: calc(50% + 30vw - 2rem);
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+
 /* ------------ ------------ ------------ ------------ */
 /* ------------ --RESPONSIVE-- ------------ */
 @media (max-width: 1600px) {
@@ -82,6 +137,9 @@ img {width: 100%; border-radius: 2px;}
 
   .grid-item {transition: border 200ms ease, box-shadow 400ms ease;}
   .grid-item:hover {margin-top: 0rem; border: 1px solid var(--clHideState);}
+
+  .modalPopup .carousel {width: calc(100vw - 24rem);}
+  .modalPopup .flickity-button-close {left: calc(100vw - 12rem - 2rem);}
 }
 
 @media (max-width: 579px) {
@@ -95,4 +153,8 @@ img {width: 100%; border-radius: 2px;}
   .gutter-sizer {width: 0rem;}
 
   .page-load-status {padding: 1rem 0;}
+
+  .modalPopup .carousel {width: calc(100vw - 4rem); height: 48rem;}
+  .modalPopup .carousel img {width: unset; height: 100%;}
+  .modalPopup .flickity-button-close {left: calc(100vw - 2rem - 2rem);}
 }

@@ -6,6 +6,14 @@ let list_project = [
 
 
   {
+    id:    20,
+    class: "presentation",
+    name:  "Growell",
+    type:  "PowerPoint",
+    url:   "./img/project/Growell.webp",
+  },
+
+  {
     id:    19,
     class: "presentation",
     name:  "Caraot",

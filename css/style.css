@@ -4,6 +4,7 @@
   --changeBgColorTime: 400ms;
   --clContent: #919191;
   --clShadow: #9191911f;
+  --clPopup: #2424241f;
 }
 
 /* ------------ --FONTS-- ------------ */
@@ -68,7 +69,7 @@ body, button, p, a {
   color: var(--clContent);
 }
 /* ------------ --CUSOR-- ------------ */
-.cursor {
+/* .cursor {
   position: absolute;
   transform: translate(-50%, -50%);
   border-radius: 100%;
@@ -90,7 +91,7 @@ body, button, p, a {
   mix-blend-mode: difference;
 }
 .cursor-dot.focus {width: 0; height: 0;}
-.cursor-follower.focus {width: 10rem; height: 10rem; opacity: 0;}
+.cursor-follower.focus {width: 10rem; height: 10rem; opacity: 0;} */
 
 /* ------------ --CLASS-- ------------ */
 .textVertical {writing-mode: vertical-rl;}

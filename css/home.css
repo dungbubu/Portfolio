@@ -273,7 +273,7 @@
   /* --SECTION 2-- */
   .sectionAbout {height: 60vh;}
   .frontContent img {padding: 0 2rem 0 0; }
-  .backContent {padding: 2rem 4rem 2rem 2rem;}
+  .backContent {padding: 4rem 4rem 2rem 2rem; display: block;}
 
   /* --SECTION 3-- */
   /* .project-item {margin-bottom: 2rem;} */

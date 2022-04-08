@@ -9,7 +9,7 @@ let list_product = [
     class:     "presentation",
     model:     "PPT0001MD",
     name:      "Honey PPT Template",
-    credit:    "by Mikoslide - Creative Market",
+    credit:    "by: Mikoslide - Creative Market",
     type:      "style: Minimal, Mordern",
     created:   "Apr 02, 2022",
     updated:   "last updated: Apr 06, 2022",

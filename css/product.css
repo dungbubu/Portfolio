@@ -114,7 +114,7 @@ img {width: 100%; border-radius: 2px;}
 .modalPopup .itemContent {display: none;}
 .modalPopup .flickity-button-open {display: none;}
 .modalPopup .flickity-button-close {
-  top: calc(50% - 22rem);
+  top: calc(50vh - 22rem);
   left: calc(50% + 30vw - 2rem);
   transform: translate(-50%, -50%);
   display: block;
@@ -156,5 +156,8 @@ img {width: 100%; border-radius: 2px;}
 
   .modalPopup .carousel {width: calc(100vw - 4rem); height: 48rem;}
   .modalPopup .carousel img {width: unset; height: 100%;}
-  .modalPopup .flickity-button-close {left: calc(100vw - 2rem - 2rem);}
+  .modalPopup .flickity-button-close {
+    top: calc(50vh - 25rem);
+    left: calc(100vw - 2rem - 2rem);
+  }
 }

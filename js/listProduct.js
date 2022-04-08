@@ -35,9 +35,9 @@ function appendHtml(item, key){
   `<div class="grid-item `+item.class+` key-`+key+`">
     <div class="carousel">
       <div class="carousel-cell"><img src="`+item.urlThumb1+`" alt="`+item.name+` Thumbnail(1)"></div>
-      <div class="carousel-cell"><img src="`+item.urlThumb1+`" alt="`+item.name+` Thumbnail(2)"></div>
-      <div class="carousel-cell"><img src="`+item.urlThumb1+`" alt="`+item.name+` Thumbnail(3)"></div>
-      <div class="carousel-cell"><img src="`+item.urlThumb1+`" alt="`+item.name+` Thumbnail(4)"></div>
+      <div class="carousel-cell"><img src="`+item.urlThumb2+`" alt="`+item.name+` Thumbnail(2)"></div>
+      <div class="carousel-cell"><img src="`+item.urlThumb3+`" alt="`+item.name+` Thumbnail(3)"></div>
+      <div class="carousel-cell"><img src="`+item.urlThumb4+`" alt="`+item.name+` Thumbnail(4)"></div>
     </div>
 
     <button class="flickity-button flickity-button-open" type="button" onclick="openPopup(`+key+`)">

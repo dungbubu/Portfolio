@@ -139,6 +139,7 @@ img {width: 100%; border-radius: 2px;}
   .grid-item:hover {margin-top: 0rem; border: 1px solid var(--clHideState);}
 
   .modalPopup .carousel {width: calc(100vw - 24rem);}
+  .modalPopup .carousel-cell {margin-right: 1rem;}
   .modalPopup .flickity-button-close {left: calc(100vw - 12rem - 2rem);}
 }
 

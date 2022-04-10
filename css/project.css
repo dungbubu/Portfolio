@@ -13,7 +13,7 @@ img {width: 100%; border-radius: 2px;}
 
 .grid {width: 100%; padding: 12rem 0;}
 .grid:after {content: ''; display: block; clear: both;} /* Clear fix */
-.grid-item {margin-bottom: 1rem;}
+.grid-item {margin-bottom: 1rem; border: 1px solid var(--clBorder); border-radius: 4px;}
 
 .grid-item, .grid-sizer {width: calc((100% - 10rem) / 6);} /* Độ rộng cột */
 .grid-item-active {width: calc((100% - 10rem) / 3 + 2rem);} /* Độ rộng cột sau khi được click */

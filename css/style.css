@@ -34,6 +34,7 @@
   --clTitle: #242424;
   --clHideState: #D8D8D8;
   --clModal: #24242433;
+  --clBorder: #EFEFEF;
 }
 
 [data-theme='dark'] {
@@ -42,6 +43,7 @@
   --clTitle: #FFFFFF;
   --clHideState: #4A4A4A;
   --clModal: #24242499;
+  --clBorder: #333333;
 }
 
 /* ------------ --GENERAL-- ------------ */

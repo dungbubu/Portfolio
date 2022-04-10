@@ -19,7 +19,7 @@ img {width: 100%; border-radius: 2px;}
 .gutter-sizer {width: 2rem;} /* Khoảng cách ngang giữa các đối tượng */
 .grid-item {
   margin-bottom: 2rem;
-  border: 1px solid var(--clWatermark);
+  border: 1px solid var(--clBorder);
   border-radius: 4px;
   box-shadow: 0px 0px 0px var(--clBackground);
   background-color: var(--clBackground);
@@ -28,7 +28,7 @@ img {width: 100%; border-radius: 2px;}
 .grid-item:hover {margin-top: -0.5rem; box-shadow: 0px 12px 20px var(--clShadow);}
 
 .carousel {border-radius: 4px;}
-.carousel-cell {margin-right: 1rem; overflow-y: hidden;}
+.carousel-cell {overflow-y: hidden;}
 
 .flickity-page-dots {
   bottom: 1rem;
@@ -90,35 +90,31 @@ img {width: 100%; border-radius: 2px;}
 }
 
 
-.modalPopup.active {display: block;}
-.modalPopup {
-  display: none;
+.modalPopup {display: none;}
+.modalPopup.active {
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: var(--clPopup);
   z-index: 100;
 }
 
+.modalPopup .grid-item, .modalPopup .carousel {width: 60vw;}
+.modalPopup .grid-item {
+  position: relative;
+  margin: 0;
+  background-color: unset;
+  border: none;}
 .modalPopup .grid-item:hover {margin-top: 0; box-shadow: none;}
-.modalPopup .carousel {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60vw;
-}
-.modalPopup .carousel-cell {margin-right: 2rem;}
-.modalPopup .itemContent {display: none;}
+.modalPopup .flickity-button {position: absolute;}
 .modalPopup .flickity-button-open {display: none;}
-.modalPopup .flickity-button-close {
-  top: calc(50vh - 22rem);
-  left: calc(50% + 30vw - 2rem);
-  transform: translate(-50%, -50%);
-  display: block;
-}
+.modalPopup .flickity-button-close {display: block;}
+.modalPopup .itemContent {display: none;}
 
 
 /* ------------ ------------ ------------ ------------ */
@@ -138,9 +134,7 @@ img {width: 100%; border-radius: 2px;}
   .grid-item {transition: border 200ms ease, box-shadow 400ms ease;}
   .grid-item:hover {margin-top: 0rem; border: 1px solid var(--clHideState);}
 
-  .modalPopup .carousel {width: calc(100vw - 24rem);}
-  .modalPopup .carousel-cell {margin-right: 1rem;}
-  .modalPopup .flickity-button-close {left: calc(100vw - 12rem - 2rem);}
+  .modalPopup .grid-item, .modalPopup .carousel {width: calc(100vw - 24rem);}
 }
 
 @media (max-width: 579px) {
@@ -155,10 +149,6 @@ img {width: 100%; border-radius: 2px;}
 
   .page-load-status {padding: 1rem 0;}
 
-  .modalPopup .carousel {width: calc(100vw - 4rem); height: 48rem;}
+  .modalPopup .grid-item, .modalPopup .carousel {width: calc(100vw - 4rem); height: 48rem;}
   .modalPopup .carousel img {width: unset; height: 100%;}
-  .modalPopup .flickity-button-close {
-    top: calc(50vh - 25rem);
-    left: calc(100vw - 2rem - 2rem);
-  }
 }

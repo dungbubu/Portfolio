@@ -11,8 +11,8 @@ let list_product = [
     name:      "Honey PPT Template",
     credit:    "by: Mikoslide - Creative Market",
     type:      "style: Minimal, Mordern",
-    created:   "Apr 02, 2022",
     updated:   "last updated: Apr 06, 2022",
+    created:   "Apr 02, 2022",
     urlThumb1: "./img/product/PPT0001MD/thumbnail_Honey_1.webp",
     urlThumb2: "./img/product/PPT0001MD/thumbnail_Honey_2.webp",
     urlThumb3: "./img/product/PPT0001MD/thumbnail_Honey_3.webp",
@@ -65,6 +65,7 @@ function appendHtml(item, key){
 
 // Flickity Carousel
 var $carousel = $('.carousel').flickity({
+  cellAlign: 'left',
   imagesLoaded: true,
   prevNextButtons: false,
 });

@@ -76,6 +76,7 @@ function openPopup(key) {
   $('.modalPopup').append(appendHtml(list_product[key], key));
   $('.modalPopup .carousel').flickity({
     cellAlign: 'left',
+    freeScroll: true,
     imagesLoaded: true,
     prevNextButtons: false,
   });

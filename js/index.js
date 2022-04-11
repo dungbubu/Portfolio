@@ -41,16 +41,6 @@ window.onload = function () {
 };
 
 
-// Thay đổi con trỏ chuột
-$(window).mousemove(function(e) { 
-  $('.cursor').css({left: e.pageX, top: e.pageY })
-
-  $('a, .flip-box')
-  .on('mouseenter', function() {$('.cursor').addClass('focus')})
-  .on('mouseleave', function() {$('.cursor').removeClass('focus')})
-})
-
-
 // Chuyển đổi chế độ Darkmode
 var flag=false;
 function toggleDarkmode () {
@@ -78,6 +68,16 @@ function toggleDarkmode () {
 //     song.src = '../audio/MerryGoRoundOfLife-Morunas.mp3';
 //     song.play();
 //   });
+
+
+// Thay đổi con trỏ chuột
+$(window).mousemove(function(e) { 
+  $('.cursor').css({left: e.pageX, top: e.pageY })
+
+  $('a, .flip-box')
+  .on('mouseenter', function() {$('.cursor').addClass('focus')})
+  .on('mouseleave', function() {$('.cursor').removeClass('focus')})
+})
 
 
 // Humburger menu

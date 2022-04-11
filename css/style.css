@@ -5,6 +5,13 @@
   --clContent: #919191;
   --clShadow: #9191911f;
   --clPopup: #2424241f;
+  
+  --clBackground: #FFFFFF;
+  --clWatermark: #FAFAFA;
+  --clTitle: #242424;
+  --clHideState: #D8D8D8;
+  --clModal: #24242433;
+  --clBorder: #EFEFEF;
 }
 
 /* ------------ --FONTS-- ------------ */

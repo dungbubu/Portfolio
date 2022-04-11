@@ -10,6 +10,9 @@ includeHTML();
 
 
 var theme = localStorage.getItem('data-theme');
+if (!theme) {
+  $('html').setAttribute('data-theme', "light");
+}
 var root = document.querySelector(':root');
 
 
@@ -20,13 +23,6 @@ window.onload = function () {
 
   // Khai báo trạng thái Theme Mode
   switch (theme) {
-    // Case null: cần gán giá trị cho Local Storage
-    default:
-      $('.decorBg').css({"width":"0", "height":"0"});
-      $('.toggleDarkmode').html('darkmode');
-      root.setAttribute('data-theme', "light");
-      localStorage.setItem("data-theme", "light");
-    // Case có giá trị: chỉ cần set lại giá trị cho root
     case "dark":
       $('.decorBg').css({"width":"200vmax", "height":"200vmax"});
       $('.toggleDarkmode').html('lightmode');

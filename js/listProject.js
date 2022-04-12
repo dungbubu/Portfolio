@@ -6,7 +6,15 @@ let list_project = [
 
 
   {
-    id:    20,
+    id:    22,
+    class: "webLandingpage",
+    name:  "Phân bón Phượng Hoàng",
+    type:  "Website",
+    url:   "./img/project/PhanBonPhuongHoang.webp",
+  },
+
+  {
+    id:    21,
     class: "presentation",
     name:  "Growell",
     type:  "PowerPoint",
@@ -14,11 +22,19 @@ let list_project = [
   },
 
   {
-    id:    19,
+    id:    20,
     class: "presentation",
     name:  "Caraot",
     type:  "PowerPoint",
     url:   "./img/project/Caraot.webp",
+  },
+
+  {
+    id:    19,
+    class: "webLandingpage",
+    name:  "Portfolio Bùi Đức Hoà",
+    type:  "Landing Page",
+    url:   "./img/project/PortfolioBuiDucHoa.webp",
   },
 
   {

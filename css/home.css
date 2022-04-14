@@ -127,7 +127,7 @@
 }
 
 .backContent {
-  padding: 5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,7 +251,7 @@
   /* --SECTION 2-- */
   .sectionAbout h2 {display: none;}
   .sectionAbout {display: flex; flex-flow: row nowrap; overflow-y: hidden;}
-  .flip-box{flex-shrink: 0; width: 95%;}
+  .flip-box {flex-shrink: 0; width: 95%;}
   .backContent {text-align: left;}
 
   /* --SECTION 3-- */

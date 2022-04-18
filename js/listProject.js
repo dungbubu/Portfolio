@@ -6,6 +6,14 @@ let list_project = [
 
 
   {
+    id:    23,
+    class: "webLandingpage",
+    name:  "Manison",
+    type:  "Web theme",
+    url:   "./img/project/Manison.webp",
+  },
+
+  {
     id:    22,
     class: "webLandingpage",
     name:  "Phân bón Phượng Hoàng",

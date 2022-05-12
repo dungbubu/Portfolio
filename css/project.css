@@ -5,6 +5,9 @@ i:hover {text-decoration: underline;}
 /* ------------ --PROJECT-- ------------ */
 section {padding-top: 12rem; max-width: 1320px;}
 img {width: 100%; border-radius: 2px;}
+.grid-item .project_img {display: none;}
+.grid-item-active.grid-item .project_img {display: block;}
+.grid-item-active.grid-item .thumbnail_img {display: none;}
 
 .title {display: flex; flex-direction: column; align-items: center; text-align: center;}
 .button-group {margin-top: 1rem;}

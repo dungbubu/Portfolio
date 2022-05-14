@@ -1,88 +1,220 @@
-let list_product = [
+let list_project = [
   // Ghi chú về cách đặt tên Class
-  //     presentation       : Đặt cho Slide Template
-  //     curriculumVitae   : Đặt cho Curriculum Vitae
+  //     webLandingpage     : Đặt cho Web và Landing Page
+  //     presentation       : Đặt cho Slide thuyết trình
+  //     motionGraphic      : Đặt cho Motion Graphic
 
 
   {
-    id:        1,
-    class:     "presentation",
-    model:     "PPT0001MD",
-    name:      "Honey PPT Template",
-    credit:    "by: Mikoslide - Creative Market",
-    style:     "style: Minimal, Mordern",
-    updated:   "last updated: Apr 06, 2022",
-    created:   "Apr 02, 2022",
-    urlThumb1: "./img/product/PPT0001MD/thumbnail_Honey_1.webp",
-    urlThumb2: "./img/product/PPT0001MD/thumbnail_Honey_2.webp",
-    urlThumb3: "./img/product/PPT0001MD/thumbnail_Honey_3.webp",
-    urlThumb4: "./img/product/PPT0001MD/thumbnail_Honey_4.webp",
-    function:  '<a href="./img/product/PPT0001MD/Honey.zip" download><i>download</i></a>',
-  }
+    id:         22,
+    class:      "presentation",
+    name:       "ITE HCMC",
+    type:       "PowerPoint",
+    thumbnail:  "./img/project/ITEHCMC(thumbnail).webp",
+    url:        "./img/project/ITEHCMC.webp",
+  },
+
+  {
+    id:         21,
+    class:      "presentation",
+    name:       "Netco Post",
+    type:       "PowerPoint",
+    thumbnail:  "./img/project/NetcoPost(thumbnail).webp",
+    url:        "./img/project/NetcoPost.webp",
+  },
+
+  {
+    id:         20,
+    class:      "webLandingpage",
+    name:       "Techmaster IOS Class",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/TechmasterIOSClass(thumbnail).webp",
+    url:        "./img/project/TechmasterIOSClass.webp",
+  },
+
+  {
+    id:         19,
+    class:      "webLandingpage",
+    name:       "Manison",
+    type:       "Web theme",
+    thumbnail:  "./img/project/Manison(thumbnail).webp",
+    url:        "./img/project/Manison.webp",
+  },
+
+  {
+    id:         18,
+    class:      "webLandingpage",
+    name:       "Phân bón Phượng Hoàng",
+    type:       "Website",
+    thumbnail:  "./img/project/PhanBonPhuongHoang(thumbnail).webp",
+    url:        "./img/project/PhanBonPhuongHoang.webp",
+  },
+
+  {
+    id:         17,
+    class:      "presentation",
+    name:       "Growell",
+    type:       "PowerPoint",
+    thumbnail:  "./img/project/Growell(thumbnail).webp",
+    url:        "./img/project/Growell.webp",
+  },
+
+  {
+    id:         16,
+    class:      "presentation",
+    name:       "Caraot",
+    type:       "PowerPoint",
+    thumbnail:  "./img/project/Caraot(thumbnail).webp",
+    url:        "./img/project/Caraot.webp",
+  },
+
+  {
+    id:         15,
+    class:      "webLandingpage",
+    name:       "Portfolio Bùi Đức Hoà",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/PortfolioBuiDucHoa(thumbnail).webp",
+    url:        "./img/project/PortfolioBuiDucHoa.webp",
+  },
+
+  {
+    id:         14,
+    class:      "webLandingpage",
+    name:       "Domain Space",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/iNETDomainSpace(thumbnail).webp",
+    url:        "./img/project/iNETDomainSpace.webp",
+  },
+
+  {
+    id:         13,
+    class:      "presentation",
+    name:       "FTA E&C",
+    type:       "PowerPoint",
+    thumbnail:  "./img/project/FTA(thumbnail).webp",
+    url:        "./img/project/FTA.webp",
+  },
+
+  {
+    id:         12,
+    class:      "webLandingpage",
+    name:       "Zozo Mobile",
+    type:       "Home Page",
+    thumbnail:  "./img/project/ZozoMobile(thumbnail).webp",
+    url:        "./img/project/ZozoMobile.webp",
+  },
+
+  {
+    id:         11,
+    class:      "webLandingpage",
+    name:       "Domain Fun",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/iNETDomainFun(thumbnail).webp",
+    url:        "./img/project/iNETDomainFun.webp",
+  },
+
+  {
+    id:         10,
+    class:      "webLandingpage",
+    name:       "Domain Host",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/iNETDomainHost(thumbnail).webp",
+    url:        "./img/project/iNETDomainHost.webp",
+  },
+
+  {
+    id:         9,
+    class:      "webLandingpage",
+    name:       "Domain Tech",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/iNETDomainTech(thumbnail).webp",
+    url:        "./img/project/iNETDomainTech.webp",
+  },
+
+  {
+    id:         8,
+    class:      "webLandingpage",
+    name:       "Domain Store",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/iNETDomainStore(thumbnail).webp",
+    url:        "./img/project/iNETDomainStore.webp",
+  },
+
+  {
+    id:         7,
+    class:      "webLandingpage",
+    name:       "Domain Xyz",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/iNETDomainXyz(thumbnail).webp",
+    url:        "./img/project/iNETDomainXyz.webp",
+  },
+
+  {
+    id:         6,
+    class:      "presentation",
+    name:       "First Alliances",
+    type:       "PowerPoint",
+    thumbnail:  "./img/project/FirstAlliances(thumbnail).webp",
+    url:        "./img/project/FirstAlliances.webp",
+  },
+
+  {
+    id:         5,
+    class:      "webLandingpage",
+    name:       "Domain Website",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/iNETDomainWebsite(thumbnail).webp",
+    url:        "./img/project/iNETDomainWebsite.webp",
+  },
+
+  {
+    id:         4,
+    class:      "webLandingpage",
+    name:       "Domain Press",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/iNETDomainPress(thumbnail).webp",
+    url:        "./img/project/iNETDomainPress.webp",
+  },
+
+  {
+    id:         3,
+    class:      "webLandingpage",
+    name:       "Domain Site",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/iNETDomainSite(thumbnail).webp",
+    url:        "./img/project/iNETDomainSite.webp",
+  },
+
+  {
+    id:         2,
+    class:      "webLandingpage",
+    name:       "Domain Online",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/iNETDomainOnline(thumbnail).webp",
+    url:        "./img/project/iNETDomainOnline.webp",
+  },
+
+  {
+    id:         1,
+    class:      "webLandingpage",
+    name:       "Tết 2022",
+    type:       "Landing Page",
+    thumbnail:  "./img/project/TetLandingPage(thumbnail).webp",
+    url:        "./img/project/TetLandingPage.webp",
+  },
 ];
 
 
-// Import List Product rồi Render ra HTML
+// Import List Project rồi Render ra HTML
 var html = '';
-list_product.forEach(function(item, key) {
-  html += appendHtml(item, key);
+list_project.forEach(function(item) {
+  html += `<div class="grid-item `+item.class+` grid-active">
+            <img class="thumbnail_img" src="`+item.thumbnail+`" alt="`+item.name+` `+item.type+`">
+            <img class="project_img"   src="`+item.url+`"       alt="`+item.name+` `+item.type+`">
+            <div class="content">
+              <h4>`+item.name+`</h4>
+              <p>`+item.type+`</p>
+            </div>
+          </div>`;
 });
 $('.grid').append(html);
-
-
-function appendHtml(item, key){
-  var html =
-  `<div class="grid-item `+item.class+` key-`+key+`">
-    <div class="carousel">
-      <div class="carousel-cell"><img src="`+item.urlThumb1+`" alt="`+item.name+` Thumbnail(1)"></div>
-      <div class="carousel-cell"><img src="`+item.urlThumb2+`" alt="`+item.name+` Thumbnail(2)"></div>
-      <div class="carousel-cell"><img src="`+item.urlThumb3+`" alt="`+item.name+` Thumbnail(3)"></div>
-      <div class="carousel-cell"><img src="`+item.urlThumb4+`" alt="`+item.name+` Thumbnail(4)"></div>
-    </div>
-
-    <button class="flickity-button flickity-button-open" type="button" onclick="openPopup(`+key+`)">
-      <svg class="flickity-button-icon" viewBox="0 0 32 32"><path d="M15,20,7,28h5v4H0V20H4v5l8-8Zm5-5,8-8v5h4V0H20V4h5l-8,8Z"></path></svg>
-    </button>
-    <button class="flickity-button flickity-button-close" type="button" onclick="closePopup()">
-      <svg class="flickity-button-icon" viewBox="0 0 32 32"><path d="M32,3l-7,7h5v4H18V2h4V7l7-7ZM3,32l7-7v5h4V18H2v4H7L0,29Z"></path></svg>
-    </button>
-
-    <div class="content">
-      <h4>`+item.name+`</h4>
-      
-      <div class="credit">
-        <div>`+item.credit+`</div>
-        <div>`+item.style+`</div>
-        <div>`+item.updated+`</div>
-      </div>
-
-      <div>`+item.function+`</div>
-    </div>
-  </div>`;
-  return html;
-}
-
-
-// Flickity Carousel
-var $carousel = $('.carousel').flickity({
-  cellAlign: 'left',
-  imagesLoaded: true,
-  prevNextButtons: false,
-});
-
-
-// Tắt bật Popup
-function openPopup(key) {
-  $('.modalPopup').append(appendHtml(list_product[key], key));
-  $('.modalPopup .carousel').flickity({
-    cellAlign: 'left',
-    freeScroll: true,
-    imagesLoaded: true,
-    prevNextButtons: false,
-  });
-  $('.modalPopup').addClass('active');
-};
-function closePopup() {
-  $('.modalPopup').empty();
-  $('.modalPopup').removeClass('active');
-};

@@ -10,7 +10,7 @@ let list_product = [
     model:     "PPT0001MD",
     name:      "Honey PPT Template",
     credit:    "by: Mikoslide - Creative Market",
-    type:      "style: Minimal, Mordern",
+    style:     "style: Minimal, Mordern",
     updated:   "last updated: Apr 06, 2022",
     created:   "Apr 02, 2022",
     urlThumb1: "./img/product/PPT0001MD/thumbnail_Honey_1.webp",
@@ -47,16 +47,16 @@ function appendHtml(item, key){
       <svg class="flickity-button-icon" viewBox="0 0 32 32"><path d="M32,3l-7,7h5v4H18V2h4V7l7-7ZM3,32l7-7v5h4V18H2v4H7L0,29Z"></path></svg>
     </button>
 
-    <div class="itemContent">
-      <div class="itemTitle"><h4 class="name">`+item.name+`</h4></div>
-
-      <div class="itemSubTitle">
+    <div class="content">
+      <h4>`+item.name+`</h4>
+      
+      <div class="credit">
         <div>`+item.credit+`</div>
-        <div>`+item.type+`</div>
+        <div>`+item.style+`</div>
         <div>`+item.updated+`</div>
       </div>
 
-      <div class="itemFunction">`+item.function+`</div>
+      <div>`+item.function+`</div>
     </div>
   </div>`;
   return html;

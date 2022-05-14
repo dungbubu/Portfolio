@@ -94,7 +94,7 @@ onHashchange();
 
 
 // Hàm tạo hiệu ứng click để phóng to ảnh trong List Project
-$('.grid').on('click','.grid-item', function() {
+$('.grid').on('click','.grid-active', function() {
   $(this).toggleClass('grid-item-active');
   $grid.isotope();
 });

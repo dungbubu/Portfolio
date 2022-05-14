@@ -1,8 +1,7 @@
 /* ------------ --GENERAL-- ------------ */
 i:hover {text-decoration: underline;}
+.watermark {opacity: 0;}
 
-
-/* ------------ --PROJECT-- ------------ */
 section {padding-top: 12rem; max-width: 1320px;}
 img {width: 100%; border-radius: 2px;}
 
@@ -13,20 +12,40 @@ img {width: 100%; border-radius: 2px;}
 
 .grid {width: 100%; padding: 12rem 0;}
 .grid:after {content: ''; display: block; clear: both;} /* Clear fix */
-.grid-item {margin-bottom: 1rem;}
-
 .grid-item, .grid-sizer {width: calc((100% - 6rem) / 4);} /* Độ rộng cột */
 .gutter-sizer {width: 2rem;} /* Khoảng cách ngang giữa các đối tượng */
+
 .grid-item {
   margin-bottom: 2rem;
+  background-color: var(--clBackground);
   border: 1px solid var(--clBorder);
   border-radius: 4px;
-  box-shadow: 0px 0px 0px var(--clBackground);
-  background-color: var(--clBackground);
-  transition: margin-top 600ms ease, box-shadow 400ms ease;
 }
-.grid-item:hover {margin-top: -0.5rem; box-shadow: 0px 12px 20px var(--clShadow);}
+.grid-item .content {padding: 1.2rem;}
+.grid-item .content i {color: var(--clTitle);}
+.grid-item .credit {margin: 0.5rem 0; font-size: 1.2rem;}
 
+/* reveal grid after images loaded */
+.grid.are-images-unloaded {opacity: 0;}
+/* hide by default */
+.grid.are-images-unloaded .image-grid__item {opacity: 0;}
+
+.page-load-status {
+  display: none; /* hidden by default */
+  padding: 2rem 0;
+  border-top: 1px solid var(--clHideState);
+  text-align: center;
+}
+
+
+/* ------------ --PROJECT-- ------------ */
+.grid-item-active {width: calc((100% - 6rem) / 2 + 2rem);} /* Độ rộng cột sau khi được click */
+.grid-item .project_img {display: none;}
+.grid-item-active.grid-item .project_img   {display: block;}
+.grid-item-active.grid-item .thumbnail_img {display: none;}
+
+
+/* ------------ --PRODUCT-- ------------ */
 .carousel {border-radius: 4px;}
 .carousel-cell {overflow-y: hidden;}
 
@@ -71,24 +90,6 @@ img {width: 100%; border-radius: 2px;}
   height: 16px;
 }
 
-.itemContent {margin: 1rem 1rem 1rem 1.5rem;}
-.itemSubTitle {margin: 0.5rem 0; font-size: 1.2rem;}
-.itemFunction i {color: var(--clTitle);}
-
-
-/* reveal grid after images loaded */
-.grid.are-images-unloaded {opacity: 0;}
-/* hide by default */
-.grid.are-images-unloaded .image-grid__item {opacity: 0;}
-
-
-.page-load-status {
-  display: none; /* hidden by default */
-  padding: 2rem 0;
-  border-top: 1px solid var(--clHideState);
-  text-align: center;
-}
-
 
 .modalPopup {display: none;}
 .modalPopup.active {
@@ -121,6 +122,7 @@ img {width: 100%; border-radius: 2px;}
 /* ------------ --RESPONSIVE-- ------------ */
 @media (max-width: 1600px) {
   section {padding-top: 6rem;}
+  .grid-item .content {padding: .6rem;}
   
   .button:hover, .button.is-checked {margin: 0 1rem;}
 
@@ -129,11 +131,8 @@ img {width: 100%; border-radius: 2px;}
 
 @media (max-width: 992px) {
   .grid-item, .grid-sizer {width: calc((100% - 2rem) / 2);}
-  .gutter-sizer {width: 2rem;}
 
-  .grid-item {transition: border 200ms ease, box-shadow 400ms ease;}
-  .grid-item:hover {margin-top: 0rem; border: 1px solid var(--clHideState);}
-
+  .grid-item-active {width: 100%;}
   .modalPopup .grid-item, .modalPopup .carousel {width: calc(100vw - 24rem);}
 }
 
@@ -141,14 +140,14 @@ img {width: 100%; border-radius: 2px;}
   section {padding-top: 6rem; width: calc(100vw - 4rem);}
 
   .grid {padding: 4rem 0;}
-  .grid-item {margin-bottom: 1.5rem;}
-  .grid-item .title {padding: 0.2rem;}
-
   .grid-item, .grid-sizer {width: 100%;}
   .gutter-sizer {width: 0rem;}
 
-  .page-load-status {padding: 1rem 0;}
+  .grid-item {margin-bottom: 2rem;}
+  .grid-item .content {padding: 0.2rem;}
 
   .modalPopup .grid-item, .modalPopup .carousel {width: calc(100vw - 4rem); height: 48rem;}
   .modalPopup .carousel img {width: unset; height: 100%;}
+
+  .page-load-status {padding: 1rem 0;}
 }

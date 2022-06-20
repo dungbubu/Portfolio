@@ -6,6 +6,20 @@ let list_marketing = [
 
 
   {
+    id:           49,
+    orientation:  "landscape",
+    year:         "y2022",
+    url:          "./img/marketing/d20220523b.webp",
+  },
+
+  {
+    id:           48,
+    orientation:  "square",
+    year:         "y2022",
+    url:          "./img/marketing/d20220523a.webp",
+  },
+
+  {
     id:           47,
     orientation:  "landscape",
     year:         "y2022",

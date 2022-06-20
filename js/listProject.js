@@ -6,6 +6,87 @@ let list_project = [
 
 
   {
+    id:         31,
+    class:      "webLandingpage",
+    name:       "Zozo eInvoice",
+    type:       "Home Page",
+    thumbnail:  "./img/project/ZozoeInvoice(thumbnail).webp",
+    url:        "./img/project/ZozoeInvoice.webp",
+  },
+
+  {
+    id:         30,
+    class:      "webLandingpage",
+    name:       "Zozo CA",
+    type:       "Home Page",
+    thumbnail:  "./img/project/ZozoCA(thumbnail).webp",
+    url:        "./img/project/ZozoCA.webp",
+  },
+
+  {
+    id:         29,
+    class:      "webLandingpage",
+    name:       "BePage",
+    type:       "Home Page",
+    thumbnail:  "./img/project/BePage(thumbnail).webp",
+    url:        "./img/project/BePage.webp",
+  },
+
+  {
+    id:         28,
+    class:      "presentation",
+    name:       "Dai Phong JSC",
+    type:       "PowerPoint",
+    thumbnail:  "./img/project/DaiPhongJSC(thumbnail).webp",
+    url:        "./img/project/DaiPhongJSC.webp",
+  },
+
+  {
+    id:         27,
+    class:      "webLandingpage",
+    name:       "Zozo Helpdesk",
+    type:       "Site Page",
+    thumbnail:  "./img/project/ZozoHelpdesk(thumbnail).webp",
+    url:        "./img/project/ZozoHelpdesk.webp",
+  },
+
+  {
+    id:         26,
+    class:      "webLandingpage",
+    name:       "Zozo Blog",
+    type:       "Site Page",
+    thumbnail:  "./img/project/ZozoBlog(thumbnail).webp",
+    url:        "./img/project/ZozoBlog.webp",
+  },
+
+  {
+    id:         25,
+    class:      "webLandingpage",
+    name:       "Zozo Web",
+    type:       "Home Page",
+    thumbnail:  "./img/project/ZozoWeb(thumbnail).webp",
+    url:        "./img/project/ZozoWeb.webp",
+  },
+
+  {
+    id:         24,
+    class:      "webLandingpage",
+    name:       "ScotsEnglish",
+    type:       "Website Concept",
+    thumbnail:  "./img/project/ScotsEnglish(thumbnail).webp",
+    url:        "./img/project/ScotsEnglish.webp",
+  },
+
+  {
+    id:         23,
+    class:      "presentation",
+    name:       "LeAnhLinh's Portfolio",
+    type:       "PowerPoint",
+    thumbnail:  "./img/project/LeAnhLinh(thumbnail).webp",
+    url:        "./img/project/LeAnhLinh.webp",
+  },
+
+  {
     id:         22,
     class:      "presentation",
     name:       "ITE HCMC",

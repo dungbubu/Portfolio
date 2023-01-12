@@ -1,97 +1,125 @@
-/* ROOT ------------ ------------ */
-/* ROOT ------------ ------------ */
+/* ------------ ------------ ------------ ------------ */
+/* ------------ ------------ ------------ ------------ */
 :root {
     --clBlack: #323232;
     --clGrey:  #949494;
     --clGray:  #F0F0F0;
     --clWhite: #FAFAFA;
+    --pdl1col: calc((100vw - 3.5px) / 6);
     }
-
-
-/* FONT ------------ ------------ */
-/* FONT ------------ ------------ */
-@font-face {font-family: Helvetica; font-display: swap; src: url(../font/Helvetica.ttf);}
-
-
-/* GENERAL ------------ ------------ */
-/* GENERAL ------------ ------------ */
 * {box-sizing: border-box; margin: 0; padding: 0; border: 0;}
 html {scroll-behavior: smooth; font-size: 62.5%;}
-img {display: block; width: 100%;}
+body {-ms-overflow-style: none; scrollbar-width: none;}
+body::-webkit-scrollbar {display: none;}
+::selection {background: var(--clBlack); color: var(--clWhite);}
 h1, h2, h3, h4 {font-weight: unset;}
 a, a:hover, a:focus, a:visited {color: inherit; text-decoration: none;}
 button {font-size: inherit; background-color: transparent;}
+img {display: block; width: 100%;}
+.mobile {display: none;}
+.wrapper {overflow: hidden;}
+
+@font-face {
+    src: url(../font/Oswald.ttf);
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200 700;
+    font-display: swap;
+    }
+    
+body {font-family: 'Oswald', sans-serif; color: var(--clBlack);}
+h1 {font-size: 10vw; line-height: 10vw; text-transform: uppercase;}
+h2 {font-size: 4.2rem; line-height: 4.6rem;}
+h3, h4, p {font-size: 2.0rem; line-height: 2.6rem;}
+h3, p {color: var(--clGrey);}
+h4 {color: var(--clBlack);}
+p {font-weight: 200;}
+/* ------------ ------------ ------------ ------------ */
+/* ------------ ------------ ------------ ------------ */
 
 
-/* SCROLLBAR ------------ ------------ */
-/* SCROLLBAR ------------ ------------ */
-body::-webkit-scrollbar {display: none;}
-body {-ms-overflow-style: none; scrollbar-width: none;}
 
 
-/* SELECTION ------------ ------------ */
-/* SELECTION ------------ ------------ */
-::selection {background: var(--clBlack); color: var(--clWhite);}
+/* Logo & Menu ------------ ------------ */
+.position__fixed {position: fixed; top: 40px; left: 0; z-index: 100;}
+.logo {margin: 0 0 60px 60px;}
 
-
-/* TYPOGRAPHY ------------ ------------ */
-/* TYPOGRAPHY ------------ ------------ */
-body {font-family: 'Helvetica', sans-serif; font-weight: 400; color: var(--clBlack);}
-h1 {font-size: 12vw; line-height: 10vw; text-transform: uppercase;}
-h2 {font-size: 4.2rem;}
-h3 {font-size: 2.0rem; color: var(--clGrey);}
-h4 {font-size: 2.0rem; line-height: 4rem; color: var(--clBlack);}
-p  {font-size: 2.0rem; line-height: 4rem; color: var(--clGrey);}
-
-
-/* CLASS ------------ ------------ */
-/* CLASS ------------ ------------ */
-.flexRow {display: flex; flex-direction: row; align-items: center;}
-.flexRow .decor {
+.menu--item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+.menu--item h4 {
+    transition: color 200ms linear;
+    }
+.menu--item .decor__horizontal {
+    margin-right: 20px;
+    width: 40px;
     height: 1px;
     background-color: var(--clGrey);
     transition: width 200ms linear, background-color 100ms linear;
     }
 
+.menu--item.hide h4 {
+    font-style: normal;
+    color: var(--clGray);
+    font-weight: 200;
+    }
+.menu--item.hide .decor__horizontal {
+    background-color: var(--clGray);
+    }
 
-/* Logo & Menu ------------ ------------ */
-.logo, .menu {position: fixed; left: 0; z-index: 100;}
-.logo {top: 40px; padding-left: 60px;}
-.menu {top: 120px; margin-top: 60px;}
-
-.menuItem h4 {transition: color 200ms linear;}
-.menuItem .decor {margin-right: 20px; width: 40px;}
-
-.menuItem:hover h4, .menuItem.active h4 {font-style: italic;}
-.menuItem:hover .decor, .menuItem.active .decor {width: 60px;}
-
-.menuItem.hide h4 {color: var(--clGray);}
-.menuItem.hide .decor {background-color: var(--clGray);}
+.menu--item:hover h4, .menu--item.active h4 {
+    font-style: italic;
+    color: var(--clBlack);
+    font-weight: 400;
+    }
+.menu--item:hover .decor__horizontal, .menu--item.active .decor__horizontal {
+    width: 60px;
+    background-color: var(--clBlack);
+    }
 
 
-/* Container ------------ ------------ */
+/* Container, Section, Header ------------ ------------ */
 .container {
     position: relative;
-    padding-left: calc((100vw - 7px) / 6 + 2px);
+    padding-left: var(--pdl1col);
     padding-right: 60px;
     width: 100vw;
     z-index: 20;
     }
+section {margin-bottom: 240px; padding-top: 40px;} 
 
-
-/* Section ------------ ------------ */
-section, .header {margin-bottom: 60px;}
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 60px;
+    }
 .header .title {padding-right: 20px; width: 20%;}
-.header .decor {width: 80%;}
-.wrapper {overflow: hidden;}
-.mb60  {margin-bottom: 60px;}
-.mb30  {margin-bottom: 30px;}
-.mb20  {margin-bottom: 20px;}
-.pt40  {padding-top: 40px;}
+.header h2 {text-transform: uppercase;}
+.header .decor__horizontal {
+    width: 100%;
+    height: 1px;
+    background-color: var(--clGrey);
+    }
+.header .animate {
+    position: absolute;
+    left: calc((100vw - 3.5px) / 6 * 3); bottom: 0;
+    font-size: 10vw;
+    line-height: 10vw;
+    color: var(--clGray);
+    text-transform: uppercase;
+    text-align: right;
+    white-space: nowrap;
+    z-index: -1;
+    }
 
 
 /* Section 1 ------------ ------------ */
-.section1 {
+#section1 {
     padding: 0 60px 60px 0;
     height: 100vh;
     display: flex;
@@ -100,17 +128,33 @@ section, .header {margin-bottom: 60px;}
 
 
 /* Section 2 ------------ ------------ */
-.rowContent {width: 100%; display: flex; flex-direction: row;}
-.rowContent h4 {width: 8vw;}
+.rowContent {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+.rowContent h4 {min-width: 8vw;}
 .rowContent p {width: calc(100% - 8vw);}
-.col1st {width: calc((100vw - 7px) / 6 * 3 + 4px); padding-right: 60px;}
-.col2nd {width: calc(100% - ((100vw - 7px) / 6 * 3 + 4px));}
+.col1st {
+    width: calc((100vw - 3.5px) / 6 * 3 + 4px);
+    padding-left: var(--pdl1col);
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    }
+.col2nd {width: calc(100% - ((100vw - 3.5px) / 6 * 3 + 2px));}
 
 
 /* Section 3 ------------ ------------ */
-.grid2x3 {display: grid; grid-template-columns: auto auto auto; grid-gap: 20px;}
-.grid2x3 .gridItem {margin-bottom: 60px;}
-.gridItem .wrapper {margin-bottom: 20px;}
+.grid {display: grid; grid-template-columns: auto auto auto; grid-gap: 20px;}
+.grid--item {margin-bottom: 60px;}
+.grid--item .wrapper {margin-bottom: 20px;}
+
+
+/* Section 4 ------------ ------------ */
 
 
 /* Background ------------ ------------ */
@@ -120,12 +164,13 @@ section, .header {margin-bottom: 60px;}
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     z-index: 10;
     }
-.background .decor {
-    width: 1px;
+.background .decor__vertical {
+    width: 0.5px;
     height: 100vh;
     background-color: var(--clGray);
     }
@@ -139,7 +184,9 @@ section, .header {margin-bottom: 60px;}
 /* ------------ --------RESPONSIVE------- ------------ */
 
 @media (max-width: 1600px) {
-    .logo {top: 40px; padding-left: 30px;}
-    .logo .decor, .menu .decor {margin-right: 10px; width: 20px;}
-    .menuItem:hover .decor, .menuItem.active .decor {width: 40px;}
+    .position__fixed {top: 30px;}
+    .logo {margin: 0 0 60px 30px;}
+    .logo .decor__horizontal, .menu .decor__horizontal {margin-right: 10px; width: 20px;}
+    .menu--item:hover .decor__horizontal, .menu--item.active .decor__horizontal {width: 40px;}
+    section {padding-top: 30px;} 
     }

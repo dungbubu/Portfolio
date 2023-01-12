@@ -20,118 +20,142 @@
 
 <body>
     <!-- Logo & Menu -->
-    <a href="./index.html" class="logo">
-        <h2>Dungbubu</h2>
-        <h3>Portfolio</h3>
-    </a>
-
-    <div class="menu">
-        <div class="menuItem flexRow">
-            <div class="decor">
-            </div><a href="#section2"><h4>About me</h4></a>
+    <div class="position__fixed">
+        <div class="logo desktop">
+            <a href="./index.html"><h2>.dungbubu</h2><h3>Ux/Ui and Web designer</h3></a>
         </div>
-        <div class="menuItem flexRow">
-            <div class="decor">
-            </div><a href="#section3"><h4>Project</h4></a>
+        <div class="logo mobile">
+            <a href="./index.html"><h2>.d</h2></a>
         </div>
-        <div class="menuItem flexRow">
-            <div class="decor">
-            </div><a href="#"><h4>Contact</h4></a>
+    
+        <div class="menu desktop">
+            <div class="menu--item">
+                <div class="decor__horizontal"></div>
+                <a href="#section2"><h4>About me</h4></a>
+            </div>
+            <div class="menu--item">
+                <div class="decor__horizontal"></div>
+                <a href="#section3"><h4>Projects</h4></a>
+            </div>
+            <div class="menu--item">
+                <div class="decor__horizontal"></div>
+                <a href="#section4"><h4>Contact</h4></a>
+            </div>
         </div>
+        <!-- <div class="menu mobile"></div> -->
     </div>
+
 
     <div class="container">
         <!-- Section 1 -->
-        <!-- <section id="section1" class="section1">
-            <h1><i>Dungbubu</i></br><b>portfolio</b></h1>
-        </section> -->
+        <section id="section1">
+            <h1>Dungbubu</br>portfolio</h1>
+        </section>
 
 
         <!-- Section 2 -->
-        <!-- <section id="section2" class="section2 mb60 pt40">
-            <div class="header flexRow">
-                <div class="title"><h2>PROFILE</h2><h3>Something about me</h3></div>
-                <div class="decor"></div>
+        <section id="section2">
+            <div class="header">
+                <div class="title"><h2>ABOUT ME</h2><h3>Something about me</h3></div>
+                <div class="decor__horizontal"></div>
+                <div class="animate">ABOUT ME</div>
             </div>
 
-            <div class="rowContent">
+            <div class="rowContent ">
                 <div class="col1st">
-                    <div class="rowContent mb20">
-                        <div class="rowContent"><h4>D.O.B:</h4><p>June 24, 1996</p></div>
+                    <div class="title">
+                        <h2>Dũng Mạnh Nguyễn</h2>
+                        <p>Dũng Bự</p>
+                    </div>
+                    
+                    <div class="paragraph">
                         <div class="rowContent"><h4>Birthplace:</h4><p>Ha Noi, Viet Nam</p></div>
-                    </div>
-    
-                    <div class="rowContent mb20">
+                        <div class="rowContent"><h4>D.O.B:</h4><p>June 24, 1996</p></div>
                         <div class="rowContent"><h4>Company:</h4><p>Zozo.vn</p></div>
-                        <div class="rowContent"><h4>Role:</h4><p>Ux/Ui and Web Designer</p></div>
+                        <div class="rowContent"><h4>Position:</h4><p>Ux/Ui and Web Designer</p></div>
+                        <div class="rowContent">
+                            <h4>Describe:</h4>
+                            <p>I am responsible for the appearance of the products before 
+                            sending them to the customer. Besides the interface, I always 
+                            try to improve the customer's experience when using the products 
+                            in the best possible way. My goal is to get better at Ui/Ux.</p>
+                        </div>
                     </div>
-    
-                    <div class="rowContent mb20">
-                        <h4>Describe:</h4>
-                        <p>I am responsible for the appearance of the products before 
-                           sending them to the customer. Besides the interface, I always 
-                           try to improve the customer's experience when using the products 
-                           in the best possible way. My goal is to get better at Ui/Ux.</p>
-                    </div>
-    
-                    <div class="rowContent mb20"><h4>Hobby:</h4><p>Design, art, blah blah</p></div>
-    
-                    <div class="rowContent mb20">
-                        <h4>CV:</h4>
-                        <p>You can download my cv <a href="./image/Demo.png" download>here</a></p>
+
+                    <div class="btn">
+                        <h4>For more information, please </h4>
+                        <a href="./image/Demo.png" download><p>download my CV (pdf 2mb)</p></a>
                     </div>
                 </div>
 
-                <div class="col2nd wrapper"><img src="./image/Profile.png" alt="Profile Picture of me"></div>
+                <div class="col2nd wrapper">
+                    <img src="./image/Profile.png" alt="Profile Picture of me">
+                </div>
             </div>
-        </section> -->
+        </section>
 
 
         <!-- Section 3 -->
-        <!-- <section class="section3 mb60">
-            <div class="header flexRow">
-                <div class="title"><h2>PROJECT</h2><h3>Recently project</h3></div>
-                <div class="decor"></div>
+        <section id="section3">
+            <div class="header">
+                <div class="title"><h2>PROJECTS</h2><h3>Recently project</h3></div>
+                <div class="decor__horizontal"></div>
+                <div class="animate">PROJECTS</div>
             </div>
 
-            <div class="grid2x3">
-                <div class="gridItem">
+            <div class="grid">
+                <div class="grid--item">
                     <div class="wrapper"><img src="./image/Project.png" alt=""></div>
                     <div><h4>Project Name</h4><p>Project type</p></div>
                 </div>
-                <div class="gridItem">
+                <div class="grid--item">
                     <div class="wrapper"><img src="./image/Project.png" alt=""></div>
                     <div><h4>Project Name</h4><p>Project type</p></div>
                 </div>
-                <div class="gridItem">
+                <div class="grid--item">
                     <div class="wrapper"><img src="./image/Project.png" alt=""></div>
                     <div><h4>Project Name</h4><p>Project type</p></div>
                 </div>
-                <div class="gridItem">
+                <div class="grid--item">
                     <div class="wrapper"><img src="./image/Project.png" alt=""></div>
                     <div><h4>Project Name</h4><p>Project type</p></div>
                 </div>
-                <div class="gridItem">
+                <div class="grid--item">
                     <div class="wrapper"><img src="./image/Project.png" alt=""></div>
                     <div><h4>Project Name</h4><p>Project type</p></div>
                 </div>
-                <div class="gridItem">
+                <div class="grid--item">
                     <div class="wrapper"><img src="./image/Project.png" alt=""></div>
                     <div><h4>Project Name</h4><p>Project type</p></div>
                 </div>
             </div>
-        </section> -->
+        </section>
+
+
+        <!-- Section 4 -->
+        <section id="section4">
+            <div class="header">
+                <div class="title"><h2>CONTACT</h2><h3>Recently project</h3></div>
+                <div class="decor__horizontal"></div>
+                <div class="animate">CONTACT</div>
+            </div>
+
+            <div class="padding--left__1col">
+                
+            </div>
+        </section>
     </div>
+
 
     <!-- Background -->
     <div class="background">
-        <div class="decor"></div>
-        <div class="decor"></div>
-        <div class="decor"></div>
-        <div class="decor"></div>
-        <div class="decor desktop"></div>
-        <div class="decor desktop"></div>
-        <div class="decor desktop"></div>
+        <div class="decor__vertical"></div>
+        <div class="decor__vertical"></div>
+        <div class="decor__vertical"></div>
+        <div class="decor__vertical"></div>
+        <div class="decor__vertical desktop"></div>
+        <div class="decor__vertical desktop"></div>
+        <div class="decor__vertical desktop"></div>
     </div>
 
 
@@ -140,17 +164,12 @@
     <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
     <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
     <script>
-    // Add/Remove class ".hide" khi hover
+    // Add/Remove class ".active/.hide" khi click vào menu--item
     $(document).ready(function () {
-        $('.menuItem').hover(function () {
-            $(".menuItem").removeClass('active').toggleClass('hide');
-            $(this).removeClass('hide').toggleClass('active');
-        });
-
-        // $('.menuItem').click(function () {
-        //         $(".menuItem").removeClass('active').addClass('hide');
-        //         $(this).removeClass('hide').addClass('active');
-        //     });
+        $('.menu--item').click(function () {
+                $(".menu--item").removeClass('active').addClass('hide');
+                $(this).removeClass('hide').addClass('active');
+            });
     });
     </script>
 </body>
